@@ -94,6 +94,7 @@ echo "哪吒agent已在执行"
 fi
 EOF
     chmod +x ${WORKDIR}/start.sh
+    cp ${WORKDIR}/start.sh ${WORKDIR}/../start.sh
 }
 
 # 启动 nezha-agent 的函数
