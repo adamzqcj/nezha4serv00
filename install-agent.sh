@@ -85,7 +85,7 @@ generate_run_agent() {
 # 修改启动脚本
     cat > ${WORKDIR}/start.sh << EOF
 #!/bin/bash
-if [ ! "$(pgrep -f 'nezha-agent')" ] ; then
+if [ ! '$(pgrep -f "nezha-agent")' ] ; then
 echo "检测到哪吒agent未执行！"
 cd /home/${USERNAME}/.nezha-agent
 nohup ./nezha-agent -c ./config.yml >/dev/null 2>&1 &
