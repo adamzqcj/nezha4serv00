@@ -5,8 +5,8 @@ WORKDIR="/home/${USERNAME}/.nezha-agent"
 
 # 下载 nezha-agent 的函数
 download_agent() {
-    #DOWNLOAD_LINK="https://github.com/nezhahq/agent/releases/latest/download/nezha-agent_freebsd_amd64.zip"
-    DOWNLOAD_LINK="https://github.com/nezhahq/agent/releases/download/v1.1.4/nezha-agent_freebsd_amd64.zip"
+    DOWNLOAD_LINK="https://github.com/nezhahq/agent/releases/latest/download/nezha-agent_freebsd_amd64.zip"
+    #DOWNLOAD_LINK="https://github.com/nezhahq/agent/releases/download/v1.1.4/nezha-agent_freebsd_amd64.zip"
     if ! wget -qO "$ZIP_FILE" "$DOWNLOAD_LINK"; then
         echo 'error: Download failed! Please check your network or try again.'
         return 1
